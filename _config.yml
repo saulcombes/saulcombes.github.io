@@ -1,4 +1,14 @@
 theme: jekyll-theme-minimal
 title: Research Portfolio - Saul Combes
 description: Microbiology  |  Intensive Care  |  Computational Analysis
-
+nav:
+  - name: Home
+    link: /
+  - name: Research Areas
+    link: /research-areas/
+  - name: Projects
+    link: /projects/
+  - name: Skills
+    link: /skills/
+  - name: CV
+    link: /cv/
