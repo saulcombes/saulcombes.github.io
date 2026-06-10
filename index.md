@@ -1,8 +1,3 @@
----
-layout: default
-title: Research Portfolio
----
-
 # Saul Combes  
 ### Microbiology · Intensive Care · Computational Analysis
 
