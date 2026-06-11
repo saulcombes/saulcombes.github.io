@@ -1,6 +1,8 @@
 # From Superbugs to Scapegoats: AMR Misinformation and Xenophobic Narratives
 
-This project involved writing a scholarly commentary examining how antimicrobial resistance (AMR) misinformation could be exploited to fuel xenophobic and discriminatory discourse. Drawing on patterns from COVID‑19, Ebola, and historical infectious‑disease stigma, the commentary argues that current AMR communication — dominated by fear‑laden metaphors and crisis framing — creates a foreseeable risk of racialised narratives emerging in public discourse.
+This project involved writing a scholarly commentary examining how antimicrobial resistance (AMR) misinformation could be exploited to fuel xenophobic and discriminatory discourse. Drawing on patterns from COVID‑19, Ebola, and historical infectious‑disease stigma, the commentary argues that current AMR communication - dominated by fear‑laden metaphors and crisis framing - creates a foreseeable risk of racialised narratives emerging in public discourse.
+
+This project, while not part of my main medical research pipeline, was a product of personal deliberation on how my own research might be exploited and therefore how important it is to put significant thought and dedication towards how I frame and translate my work as well as my social media presence. Thinking about my own impact evoked some thoughts about the wider impact of the medical sciences and whether or not we are doing a good enough job to preserve public understanding in our specialisms.
 
 ---
 
