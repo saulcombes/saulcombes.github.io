@@ -4,12 +4,12 @@ Welcome to my project portfolio. These projects span microbiology, intensive car
 
 ---
 
-## QSI use for Pseudomonas aeruginosa in an Intensive Care Setting
-**Tags:** QSI • Literature Review • Intensive Care 
+## Genome Wide Association Study - Supervised - In Progress
+**Tags:** Data Science • Clinical Informatics • Genomics
 
-A review of the applications of QSI use to combat antimicrobial resistant strains of Pseudomonas aeruginosa in intensive care settings.  
+A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of the MRC-IEU.
 
-[View Project →](/projects/QSI_Review)
+[View Project →](/projects/GWAS)
 
 ---
 
@@ -22,12 +22,12 @@ A commentary piece warning of a foreseeable risk of AMR communication being mani
 
 ---
 
-## Genome Wide Association Study - Supervised - In Progress
-**Tags:** Data Science • Clinical Informatics • Genomics
+## QSI use for Pseudomonas aeruginosa in an Intensive Care Setting
+**Tags:** QSI • Literature Review • Intensive Care 
 
-A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of the MRC-IEU.
+A review of the applications of QSI use to combat antimicrobial resistant strains of Pseudomonas aeruginosa in intensive care settings.  
 
-[View Project →](/projects/GWAS)
+[View Project →](/projects/QSI_Review)
 
 ---
 
