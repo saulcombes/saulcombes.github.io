@@ -12,4 +12,4 @@ I integrate mechanistic biology, clinical data, and computational methods to und
 - Public outreach & Scientific Communication
   
 ## Featured Projects
-- [QSI use for Pseudomonas aeruginosa in Intensive Care settings](/projects/QSI_Review)
+- [QSI use for Pseudomonas aeruginosa in Intensive Care settings](/projects/QSI_Review.md)
