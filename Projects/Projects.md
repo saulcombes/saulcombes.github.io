@@ -4,7 +4,7 @@ Welcome to my project portfolio. These projects span microbiology, intensive car
 
 ---
 
-## Genome Wide Association Study - Supervised - In Progress
+## (1) Genome Wide Association Study - Supervised - In Progress
 **Tags:** Data Science • Clinical Informatics • Genomics
 
 A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of the MRC-IEU.
@@ -13,7 +13,7 @@ A Genome Wide Association Study using Mendelian randomisation with infectious di
 
 ---
 
-## From superbugs to scapegoats: Could antimicrobial resistance misinformation fuel xenophobic discourse?
+## (2) From superbugs to scapegoats: Could antimicrobial resistance misinformation fuel xenophobic discourse?
 **Tags:** Public Health • Scientific Communication • AMR  
 
 A commentary piece warning of a foreseeable risk of AMR communication being manipulated and used to disseminate xenophobic rhetoric and detailing the role medical scientists have to play in combating misinformation and preserving public understanding.
@@ -22,7 +22,7 @@ A commentary piece warning of a foreseeable risk of AMR communication being mani
 
 ---
 
-## QSI use for Pseudomonas aeruginosa in an Intensive Care Setting
+## (3) QSI use for Pseudomonas aeruginosa in an Intensive Care Setting
 **Tags:** QSI • Literature Review • Intensive Care 
 
 A review of the applications of QSI use to combat antimicrobial resistant strains of Pseudomonas aeruginosa in intensive care settings.  
@@ -31,7 +31,7 @@ A review of the applications of QSI use to combat antimicrobial resistant strain
 
 ---
 
-## Bioinformatics Crash Course
+## (4) Bioinformatics Crash Course
 **Tags:** Bioinformatics • Data Science • Python  
 
 A little project refreshing my knowledge of Python and gaining experience using it in a bioinformatics setting - aided by the use of CoPilot LLM. 
