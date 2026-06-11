@@ -15,6 +15,7 @@ A review of the applications of QSI use to combat antimicrobial resistant strain
 
 ## From superbugs to scapegoats: Could antimicrobial resistance misinformation fuel xenophobic discourse?
 **Tags:** Public Health • Scientific Communication • AMR  
+
 A commentary piece warning of a foreseeable risk of AMR communication being manipulated and used to disseminate xenophobic rhetoric and detailing the role medical scientists have to play in combating misinformation and preserving public understanding.
 
 [View Project →](/projects/Commentary)
