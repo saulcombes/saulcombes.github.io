@@ -9,7 +9,7 @@ Welcome to my project portfolio. These projects span microbiology, intensive car
 
 A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of the MRC-IEU.
 
-[View Project →](/projects/GWAS)
+[View Project →](/Projects/GWAS)
 
 ---
 
@@ -18,7 +18,7 @@ A Genome Wide Association Study using Mendelian randomisation with infectious di
 
 A commentary piece warning of a foreseeable risk of AMR communication being manipulated and used to disseminate xenophobic rhetoric and detailing the role medical scientists have to play in combating misinformation and preserving public understanding.
 
-[View Project →](/projects/Commentary)
+[View Project →](/Projects/Commentary)
 
 ---
 
@@ -27,7 +27,7 @@ A commentary piece warning of a foreseeable risk of AMR communication being mani
 
 A review of the applications of QSI use to combat antimicrobial resistant strains of Pseudomonas aeruginosa in intensive care settings.  
 
-[View Project →](/projects/QSI_Review)
+[View Project →](/Projects/QSI_Review)
 
 ---
 
@@ -36,4 +36,4 @@ A review of the applications of QSI use to combat antimicrobial resistant strain
 
 A little project refreshing my knowledge of Python and gaining experience using it in a bioinformatics setting - aided by the use of CoPilot LLM. 
 
-[View Project →](/projects/Bioinformatics_CC)
+[View Project →](/Projects/Bioinformatics_CC)
