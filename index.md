@@ -12,5 +12,5 @@ I integrate mechanistic biology, clinical data, and computational methods to und
 - Public outreach & Scientific Communication
   
 ## Featured Projects
-- [QSI use for Pseudomonas aeruginosa in Intensive Care settings](/projects/QSI_Review/)
-- [From superbugs to scapegoats: could antimicrobial resistance misinformation fuel xenophobic discourse?](/projects/Commentary/)
+- [QSI use for Pseudomonas aeruginosa in Intensive Care settings](/projects/QSI_Review)
+- [From superbugs to scapegoats: could antimicrobial resistance misinformation fuel xenophobic discourse?](/projects/Commentary)
