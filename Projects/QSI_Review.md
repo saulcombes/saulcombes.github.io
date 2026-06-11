@@ -1,3 +1,7 @@
+---
+title: QSI Review
+---
+
 # Quorum‑Sensing Inhibitors Targeting *Pseudomonas aeruginosa* in Intensive Care
 
 This project involved writing a 3,455‑word scientific review on quorum‑sensing inhibitors (QSIs) and their potential role in managing *Pseudomonas aeruginosa* infections in intensive care settings. The review synthesised mechanistic microbiology, anti‑virulence pharmacology, and ICU‑specific clinical challenges to evaluate whether QS‑targeted therapies could complement or enhance current antimicrobial strategies.
