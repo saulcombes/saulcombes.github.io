@@ -6,7 +6,7 @@ This project involved writing a 3,455‑word scientific review on quorum‑sensi
 
 ## Overview
 
-The review explored how *P. aeruginosa* uses three hierarchical quorum‑sensing (QS) systems — Las, PQS, and Rhl — to coordinate virulence, biofilm formation, and tissue damage. As described in the document, *“Quorum-sensing inhibitors (QSIs) provide a potentially promising therapy to combat the growing prevalence of antimicrobial‑resistant infections”* and may offer a route to attenuate virulence without exerting strong selection pressure.
+The review explored how *P. aeruginosa* uses three hierarchical quorum‑sensing (QS) systems = Las, PQS, and Rhl - to coordinate virulence, biofilm formation, and tissue damage. As described in the review, *“Quorum-sensing inhibitors (QSIs) provide a potentially promising therapy to combat the growing prevalence of antimicrobial‑resistant infections”* and may offer a route to attenuate virulence without exerting strong selection pressure.
 
 The project examined:
 
@@ -22,10 +22,10 @@ The project examined:
 ## Key Scientific Contributions
 
 ### **1. Mechanistic mapping of QS networks**
-The review broke down the hierarchical Las → PQS → Rhl cascade, explaining how each system regulates elastase, pyocyanin, rhamnolipids, and biofilm maturation. The document notes that *“the Las system is considered to be the premier QS mechanism due to its ability to take priority over all other QS mechanisms.”*
+The review broke down the hierarchical Las → PQS → Rhl cascade, explaining how each system regulates elastase, pyocyanin, rhamnolipids, and biofilm maturation. Noting that *“the Las system is considered to be the premier QS mechanism due to its ability to take priority over all other QS mechanisms.”*
 
 ### **2. Linking virulence to ICU pathology**
-You connected QS‑regulated factors to real ICU disease processes:
+I connected QS‑regulated factors to real ICU disease processes:
 
 - elastase → alveolar damage & VAP  
 - pyocyanin → oxidative stress & neutrophil apoptosis  
@@ -45,7 +45,7 @@ The review analysed the four major QSI classes:
 Each class was evaluated for mechanism, strengths, limitations, and ICU applicability. For example, enzymatic quorum‑quenching was highlighted as *“the most promising QSI in terms of clinical translation… particularly as device coatings to prevent VAP.”*
 
 ### **4. Critical appraisal of evidence**
-You assessed:
+I assessed:
 
 - strong in vitro suppression of virulence  
 - promising in vivo survival benefits in murine pneumonia and burn models  
@@ -61,7 +61,7 @@ The review emphasised that *“QSIs remain very early stage and not yet ready fo
 QSIs could reduce elastase‑mediated lung injury, weaken biofilms on endotracheal tubes, and enhance antibiotic efficacy.
 
 ### **Device‑Associated Infections**
-QSI‑based coatings on catheters, central lines, and ventilator tubing may prevent biofilm formation — a major ICU problem.
+QSI‑based coatings on catheters, central lines, and ventilator tubing may prevent biofilm formation - a major ICU problem.
 
 ### **Adjunctive Therapy in Sepsis**
 Although speculative, QSIs may reduce tissue damage and inflammatory injury during *P. aeruginosa* bacteraemia.
@@ -81,7 +81,7 @@ The review concluded that:
 - delivery, stability, and pharmacokinetics remain major barriers  
 - human trials are urgently needed  
 
-As the document states, *“substantial further research… is required before QSIs can be confidently integrated into routine clinical practice.”*
+As the review states, *“substantial further research… is required before QSIs can be confidently integrated into routine clinical practice.”*
 
 ---
 
@@ -95,6 +95,6 @@ As the document states, *“substantial further research… is required before Q
 
 ---
 
-## Download
+## Published in BILT Student Research Journal 2026 - Issue 7
 
-- **Full Review PDF:** *coming soon*  
+- **doi:** *coming soon*  
