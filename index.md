@@ -1,7 +1,7 @@
 # Saul Combes  
 ### Cellular and Molecular Medicine MSc
 
-I integrate mechanistic biology, clinical data, and computational methods to understand infection and injury.
+I integrate mechanistic biology, clinical data, and computational methods to understand infection and injury
 
 ---
 
