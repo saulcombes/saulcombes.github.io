@@ -8,33 +8,37 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
 
-  <body>
-    <!-- HERO IMAGE HEADER -->
-    <div style="
+ <body>
+
+  <!-- HERO IMAGE WITH NAV INSIDE -->
+  <div style="
+    width: 100%;
+    height: 250px;
+    background-image: url('/assets/img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  ">
+
+    <!-- NAV BAR INSIDE THE IMAGE -->
+    <nav style="
+      position: absolute;
+      bottom: 0;
       width: 100%;
-      height: 250px;
-      background-image: url('/assets/img/header.jpg');
-      background-size: cover;
-      background-position: center;
-      border-bottom: 3px solid #0366d6;
+      background: rgba(0,0,0,0.45);
+      padding: 0.75rem;
+      text-align: center;
     ">
-    </div>
-
-
-    <!-- NAVIGATION BAR -->
-    <nav style="background:#0366d6; padding:0.75rem; text-align:center;">
       <a href="/" style="color:white; margin:0 1rem; text-decoration:none;">Home</a>
-      <a href="/projects" style="color:white; margin:0 1rem; text-decoration:none;">Projects</a>
+      <a href="/Projects" style="color:white; margin:0 1rem; text-decoration:none;">Projects</a>
       <a href="/Research_Areas" style="color:white; margin:0 1rem; text-decoration:none;">Research Areas</a>
       <a href="/Skills" style="color:white; margin:0 1rem; text-decoration:none;">Skills</a>
-      <a href="/cv" style="color:white; margin:0 1rem; text-decoration:none;">CV</a>
     </nav>
 
-    <!-- PAGE CONTENT -->
-    <main class="container" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
-      {{ content }}
-    </main>
+  </div>
 
+  <main class="container" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
+    {{ content }}
+  </main>
 
-  </body>
-</html>
+</body>
