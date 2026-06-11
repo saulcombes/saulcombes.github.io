@@ -1,5 +1,5 @@
 # Saul Combes  
-### Microbiology · Intensive Care · Computational Analysis
+### Cellular and Molecular Medicine MSc
 
 I integrate mechanistic biology, clinical data, and computational methods to understand infection and injury.
 
@@ -12,4 +12,5 @@ I integrate mechanistic biology, clinical data, and computational methods to und
 - Public outreach & Scientific Communication
   
 ## Featured Projects
-- [QSI use for Pseudomonas aeruginosa in Intensive Care settings](/projects/QSI_Review)
+- [QSI use for Pseudomonas aeruginosa in Intensive Care settings](/projects/QSI_Review/)
+- [From superbugs to scapegoats: could antimicrobial resistance misinformation fuel xenophobic discourse?](/projects/Commentary/)
