@@ -95,6 +95,6 @@ As the review states, *“substantial further research… is required before QSI
 
 ---
 
-## Published in BILT Student Research Journal 2026 - Issue 7
+## Link to Review:
 
-- **doi:** *coming soon*  
+- **Combes S. A review of the use of quorum-sensing inhibitors targeting Pseudomonas aeruginosa in intensive care settings. Bristol Institute of Learning and Teaching Student Research Journal. 2026;7. doi:**
