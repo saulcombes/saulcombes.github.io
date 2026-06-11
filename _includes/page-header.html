@@ -2,9 +2,20 @@
   background-image: url('/assets/img/header.jpg');
   background-size: cover;
   background-position: center;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem 1rem 2rem;
   color: white;
+  text-align: center;
 ">
+
   <h1 class="project-name">{{ page.title | default: site.title }}</h1>
   <h2 class="project-tagline">{{ site.description }}</h2>
+
+  <nav style="margin-top: 1.5rem;">
+    <a href="/" style="margin: 0 1rem; color: white; text-decoration: none;">Home</a>
+    <a href="/projects" style="margin: 0 1rem; color: white; text-decoration: none;">Projects</a>
+    <a href="/Research_Areas" style="margin: 0 1rem; color: white; text-decoration: none;">Research Areas</a>
+    <a href="/Skills" style="margin: 0 1rem; color: white; text-decoration: none;">Skills</a>
+    <a href="/cv" style="margin: 0 1rem; color: white; text-decoration: none;">CV</a>
+  </nav>
+
 </header>
