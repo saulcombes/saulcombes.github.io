@@ -13,6 +13,7 @@ layout: default
   display: flex;
   gap: 2rem;
   transition: transform 0.6s ease;
+  will-change: transform;
 }
 
 .carousel-card {
@@ -41,6 +42,7 @@ layout: default
   align-items: center;
 }
 </style>
+
 
 # Saul Combes  
 ### Cellular and Molecular Medicine MSc
@@ -75,50 +77,58 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
         <p>Bioinformatics • Teaching • Pipelines</p>
       </div>
 
-      <div class="carousel-card" data-link="/projects/plate2">
-        <h3>Plate Imager v2</h3>
-        <p>XY Motion • Autofocus • ML Quantification</p>
-      </div>
-
     </div>
   </div>
 </div>
+
 <script>
 const track = document.querySelector('.carousel-track');
 let cards = Array.from(document.querySelectorAll('.carousel-card'));
-let currentIndex = 2; // start in the middle
+const cardWidth = cards[0].offsetWidth + 32; // width + gap
 
-function updateCarousel() {
-  const cardWidth = cards[0].offsetWidth + 32; // width + gap
+// Clone first and last 2 cards for smooth looping
+const clonesBefore = cards.slice(-2).map(c => c.cloneNode(true));
+const clonesAfter = cards.slice(0, 2).map(c => c.cloneNode(true));
+
+clonesBefore.forEach(c => track.prepend(c));
+clonesAfter.forEach(c => track.append(c));
+
+let allCards = Array.from(document.querySelectorAll('.carousel-card'));
+let currentIndex = 2; // start on the real first card
+
+function setPosition(animate = true) {
+  track.style.transition = animate ? "transform 0.6s ease" : "none";
   track.style.transform = `translateX(calc(50% - ${(currentIndex + 0.5) * cardWidth}px))`;
 
-  cards.forEach((card, i) => {
+  allCards.forEach((card, i) => {
     card.classList.toggle('active', i === currentIndex);
   });
 }
 
-function loopCarousel() {
-  if (currentIndex <= 0) {
-    const last = cards.pop();
-    cards.unshift(last);
-    track.prepend(last);
-    currentIndex = 1;
-  } else if (currentIndex >= cards.length - 1) {
-    const first = cards.shift();
-    cards.push(first);
-    track.append(first);
-    currentIndex = cards.length - 2;
-  }
+function moveTo(index) {
+  currentIndex = index;
+  setPosition(true);
 }
 
-cards.forEach((card, index) => {
+track.addEventListener('transitionend', () => {
+  // If we hit a clone, jump to the real card without animation
+  if (currentIndex === 0) {
+    currentIndex = cards.length;
+    setPosition(false);
+  }
+  if (currentIndex === allCards.length - 1) {
+    currentIndex = cards.length - 1;
+    setPosition(false);
+  }
+});
+
+// Click to centre
+allCards.forEach((card, index) => {
   card.addEventListener('click', () => {
     if (index === currentIndex) {
       window.location = card.dataset.link;
     } else {
-      currentIndex = index;
-      loopCarousel();
-      updateCarousel();
+      moveTo(index);
     }
   });
 });
@@ -133,13 +143,11 @@ track.addEventListener('touchstart', e => {
 track.addEventListener('touchend', e => {
   const diff = e.changedTouches[0].clientX - startX;
 
-  if (diff > 50) currentIndex--;
-  if (diff < -50) currentIndex++;
-
-  loopCarousel();
-  updateCarousel();
+  if (diff > 50) moveTo(currentIndex - 1);
+  if (diff < -50) moveTo(currentIndex + 1);
 });
 
 // Initial position
-updateCarousel();
+setPosition(false);
 </script>
+
