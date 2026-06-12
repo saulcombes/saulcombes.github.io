@@ -21,7 +21,7 @@ layout: default
   padding: 1rem;
   border-radius: 18px;
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   cursor: pointer;
