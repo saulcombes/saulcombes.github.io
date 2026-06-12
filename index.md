@@ -18,7 +18,7 @@ layout: default
 
 .carousel-card {
   min-width: 340px;
-  height: 240px;
+  height: 400px;
   padding: 1.5rem;
   border-radius: 22px;
   backdrop-filter: blur(14px);
