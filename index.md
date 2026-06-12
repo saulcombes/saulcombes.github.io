@@ -48,7 +48,6 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 
 ---
   
-## Featured Projects
 <h2>Active Projects</h2>
 
 <div class="carousel-container">
