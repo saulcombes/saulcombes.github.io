@@ -75,22 +75,6 @@ layout: default
   justify-content: center;
   align-items: center;
 }
-
-.page-fade {
-  position: fixed;
-  inset: 0;
-  background: #ffffff;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.35s ease;
-  z-index: 999;
-}
-
-.page-fade.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
 </style>
 
 # Saul Combes  
@@ -169,7 +153,6 @@ function moveTo(index) {
 }
 
 // Click to centre
-const pageFade = document.querySelector('.page-fade');
 
 cards.forEach((card, index) => {
   card.addEventListener('click', e => {
