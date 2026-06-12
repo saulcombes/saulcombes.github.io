@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
+
 <style>
 .carousel-container {
   width: 100%;
   overflow: hidden;
   margin: 3rem auto;
-  padding: 4rem 0; /* ensures rounded corners are visible */
+  padding: 4rem 0;
   position: relative;
 }
 
@@ -16,7 +17,7 @@ layout: default
   content: "";
   position: absolute;
   top: 0;
-  width: 180px; /* wider fade for smoother look */
+  width: 180px;
   height: 100%;
   pointer-events: none;
   z-index: 10;
@@ -83,7 +84,7 @@ layout: default
 I integrate Mechanistic Biology, Clinical Data, and Computational Methods to understand infection and injury.
 
 ---
-  
+
 <h2>Active Projects</h2>
 
 <div class="carousel-container">
@@ -122,7 +123,6 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
   </div>
 </div>
 
-
 <script>
 const track = document.querySelector('.carousel-track');
 const cards = Array.from(document.querySelectorAll('.carousel-card'));
@@ -131,12 +131,12 @@ let currentIndex = 0;
 let cardWidth;
 
 function recalc() {
-  cardWidth = cards[0].offsetWidth + 32; // width + gap
+  cardWidth = cards[0].offsetWidth + 32;
   updateCarousel();
 }
 
 window.addEventListener('resize', recalc);
-setTimeout(recalc, 50); // allow layout to settle
+setTimeout(recalc, 50);
 
 function updateCarousel() {
   track.style.transform = `translateX(calc(50% - ${(currentIndex + 0.5) * cardWidth}px))`;
@@ -152,29 +152,15 @@ function moveTo(index) {
   updateCarousel();
 }
 
-// Click to centre
-
 cards.forEach((card, index) => {
-  card.addEventListener('click', e => {
-
-    // If not active → just move carousel
-    if (index !== currentIndex) {
+  card.addEventListener('click', () => {
+    if (index === currentIndex) {
+      window.location = card.dataset.link;
+    } else {
       moveTo(index);
-      return;
     }
-
-    // Active card → fade + navigate
-    e.preventDefault();
-    const url = card.dataset.link;
-
-    pageFade.classList.add('active');
-
-    setTimeout(() => {
-      window.location = url;
-    }, 350);
   });
 });
-
 
 // Swipe support
 let startX = 0;
@@ -190,6 +176,3 @@ track.addEventListener('touchend', e => {
   if (diff < -50) moveTo(currentIndex + 1);
 });
 </script>
-
-
-
