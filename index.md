@@ -40,7 +40,7 @@ layout: default
 }
 
 .carousel-card {
-  min-width: 400px;
+  min-width: 300px;
   height: 400px;
   padding: 1.5rem;
   border-radius: 22px;
@@ -90,7 +90,7 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
         <h3>From superbugs to scapegoats: Could antimicrobial resistance misinformation fuel xenophobic discourse?</h3>
         <p>Public Health • Scientific Communication • AMR</p>
         <p>-----</p>
-        <p>A commentary piece warning of a foreseeable risk of AMR communication being manipulated and used to disseminate xenophobic rhetoric and detailing the role medical scientists have to play in combating misinformation and preserving public understanding.</p>
+        <p>A commentary piece warning of a foreseeable risk of AMR communication being manipulated to disseminate xenophobic rhetoric, detailing the role of medical scientists to preserve public understanding.</p>
       </div>
 
       <div class="carousel-card" data-link="/Projects/QSI_Review">
