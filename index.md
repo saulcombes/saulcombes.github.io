@@ -1,17 +1,39 @@
 ---
 layout: default
 ---
-
 <style>
 .carousel-container {
   width: 100%;
   overflow: hidden;
   margin: 3rem auto;
+  padding: 2rem 0; /* ensures rounded corners visible */
+  position: relative;
+}
+
+/* Fade-out edges */
+.carousel-container::before,
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.carousel-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.carousel-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
 .carousel-track {
   display: flex;
-  height: 420
   gap: 2rem;
   transition: transform 0.6s ease;
   will-change: transform;
@@ -43,7 +65,6 @@ layout: default
   align-items: center;
 }
 </style>
-
 
 # Saul Combes  
 ### Cellular and Molecular Medicine MSc
@@ -84,47 +105,26 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 
 <script>
 const track = document.querySelector('.carousel-track');
-let cards = Array.from(document.querySelectorAll('.carousel-card'));
+const cards = Array.from(document.querySelectorAll('.carousel-card'));
 const cardWidth = cards[0].offsetWidth + 32; // width + gap
 
-// Clone first and last 2 cards for smooth looping
-const clonesBefore = cards.slice(-2).map(c => c.cloneNode(true));
-const clonesAfter = cards.slice(0, 2).map(c => c.cloneNode(true));
+let currentIndex = 0;
 
-clonesBefore.forEach(c => track.prepend(c));
-clonesAfter.forEach(c => track.append(c));
-
-let allCards = Array.from(document.querySelectorAll('.carousel-card'));
-let currentIndex = 2; // start on the real first card
-
-function setPosition(animate = true) {
-  track.style.transition = animate ? "transform 0.6s ease" : "none";
+function updateCarousel() {
   track.style.transform = `translateX(calc(50% - ${(currentIndex + 0.5) * cardWidth}px))`;
 
-  allCards.forEach((card, i) => {
+  cards.forEach((card, i) => {
     card.classList.toggle('active', i === currentIndex);
   });
 }
 
 function moveTo(index) {
-  currentIndex = index;
-  setPosition(true);
+  currentIndex = Math.max(0, Math.min(cards.length - 1, index));
+  updateCarousel();
 }
 
-track.addEventListener('transitionend', () => {
-  // If we hit a clone, jump to the real card without animation
-  if (currentIndex === 0) {
-    currentIndex = cards.length;
-    setPosition(false);
-  }
-  if (currentIndex === allCards.length - 1) {
-    currentIndex = cards.length - 1;
-    setPosition(false);
-  }
-});
-
 // Click to centre
-allCards.forEach((card, index) => {
+cards.forEach((card, index) => {
   card.addEventListener('click', () => {
     if (index === currentIndex) {
       window.location = card.dataset.link;
@@ -149,6 +149,7 @@ track.addEventListener('touchend', e => {
 });
 
 // Initial position
-setPosition(false);
+updateCarousel();
 </script>
+
 
