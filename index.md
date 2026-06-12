@@ -40,7 +40,7 @@ layout: default
 }
 
 .carousel-card {
-  min-width: 500px;
+  min-width: 400px;
   height: 400px;
   padding: 1.5rem;
   border-radius: 22px;
