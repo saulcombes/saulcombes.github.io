@@ -6,7 +6,7 @@ layout: default
   width: 100%;
   overflow: hidden;
   margin: 3rem auto;
-  padding: 3rem 0; /* ensures rounded corners are visible */
+  padding: 4rem 0; /* ensures rounded corners are visible */
   position: relative;
 }
 
