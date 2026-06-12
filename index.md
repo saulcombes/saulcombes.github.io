@@ -11,6 +11,7 @@ layout: default
 
 .carousel-track {
   display: flex;
+  height: 420
   gap: 2rem;
   transition: transform 0.6s ease;
   will-change: transform;
