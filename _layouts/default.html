@@ -88,8 +88,9 @@
   <main class="container" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
     {{ content }}
   </main>
-  <script>
+ <script>
 document.addEventListener("DOMContentLoaded", () => {
+  // Fade in on load
   document.body.classList.add("fade-in");
 
   let isDragging = false;
@@ -107,20 +108,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Only navigate when clicking the ACTIVE card
   document.querySelectorAll("[data-link]").forEach(el => {
     el.addEventListener("click", e => {
       const isActive = el.classList.contains("active");
 
-      // If not active → carousel should handle it
+      // If not active → ignore completely
       if (!isActive) return;
 
-      // If dragging → do NOT navigate
+      // If dragging → ignore
       if (isDragging) {
         e.preventDefault();
         return;
       }
 
-      // Real click on active card → fade + navigate
+      // Active + real click → fade + navigate
       e.preventDefault();
       const url = el.dataset.link;
 
