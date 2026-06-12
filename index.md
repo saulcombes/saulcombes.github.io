@@ -95,7 +95,7 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
         <h3>Genome Wide Association Study - Supervised - In Progress</h3>
         <p>Data Science • Clinical Informatics • Genomics</p>
         <p>-----</p>
-        <p>A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of the MRC-IEU.</p>
+        <p>A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of an MRC-IEU supervised project.</p>
       </div>
 
       <div class="carousel-card" data-link="/Projects/Communication">
