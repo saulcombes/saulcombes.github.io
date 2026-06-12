@@ -88,55 +88,6 @@
   <main class="container" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
     {{ content }}
   </main>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.body.classList.add("fade-in");
-
-  let isDragging = false;
-  let dragStartX = 0;
-
-  // Detect drag vs click
-  document.addEventListener("mousedown", e => {
-    dragStartX = e.clientX;
-    isDragging = false;
-  });
-
-  document.addEventListener("mousemove", e => {
-    if (Math.abs(e.clientX - dragStartX) > 10) {
-      isDragging = true;
-    }
-  });
-
-  document.querySelectorAll("[data-link]").forEach(el => {
-    el.addEventListener("click", e => {
-      // Let the carousel update `.active` FIRST
-      requestAnimationFrame(() => {
-
-        const isActive = el.classList.contains("active");
-
-        // If not active → do nothing (carousel handles it)
-        if (!isActive) return;
-
-        // If dragging → do nothing
-        if (isDragging) {
-          e.preventDefault();
-          return;
-        }
-
-        // Active + real click → fade + navigate
-        e.preventDefault();
-        const url = el.dataset.link;
-
-        document.body.classList.add("fade-out");
-
-        setTimeout(() => {
-          window.location = url;
-        }, 400);
-      });
-    });
-  });
-});
-</script>
 
 
 
