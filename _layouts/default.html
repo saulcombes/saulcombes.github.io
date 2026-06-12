@@ -88,9 +88,8 @@
   <main class="container" style="max-width: 900px; margin: 0 auto; padding: 2rem;">
     {{ content }}
   </main>
- <script>
+<script>
 document.addEventListener("DOMContentLoaded", () => {
-  // Fade in on load
   document.body.classList.add("fade-in");
 
   let isDragging = false;
@@ -108,33 +107,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Only navigate when clicking the ACTIVE card
   document.querySelectorAll("[data-link]").forEach(el => {
     el.addEventListener("click", e => {
-      const isActive = el.classList.contains("active");
+      // Let the carousel update `.active` FIRST
+      requestAnimationFrame(() => {
 
-      // If not active → ignore completely
-      if (!isActive) return;
+        const isActive = el.classList.contains("active");
 
-      // If dragging → ignore
-      if (isDragging) {
+        // If not active → do nothing (carousel handles it)
+        if (!isActive) return;
+
+        // If dragging → do nothing
+        if (isDragging) {
+          e.preventDefault();
+          return;
+        }
+
+        // Active + real click → fade + navigate
         e.preventDefault();
-        return;
-      }
+        const url = el.dataset.link;
 
-      // Active + real click → fade + navigate
-      e.preventDefault();
-      const url = el.dataset.link;
+        document.body.classList.add("fade-out");
 
-      document.body.classList.add("fade-out");
-
-      setTimeout(() => {
-        window.location = url;
-      }, 400);
+        setTimeout(() => {
+          window.location = url;
+        }, 400);
+      });
     });
   });
 });
 </script>
+
 
 
 
