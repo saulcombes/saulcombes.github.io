@@ -79,24 +79,28 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
   <div class="carousel-wrapper">
     <div class="carousel-track">
 
-      <div class="carousel-card" data-link="/projects/plate-imager">
-        <h3>Plate Handling & Imaging</h3>
-        <p>Automation • Engineering • Image Analysis</p>
+      <div class="carousel-card" data-link="/Projects/GWAS">
+        <h3>Genome Wide Association Study - Supervised - In Progress</h3>
+        <p>Data Science • Clinical Informatics • Genomics</p>
+        <p>A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of the MRC-IEU.</p>
       </div>
 
-      <div class="carousel-card" data-link="/projects/phea">
-        <h3>PHEA ICU Microbiology</h3>
-        <p>Clinical Data • Infection • Aspiration</p>
+      <div class="carousel-card" data-link="/Projects/Communication">
+        <h3>From superbugs to scapegoats: Could antimicrobial resistance misinformation fuel xenophobic discourse?</h3>
+        <p>Public Health • Scientific Communication • AMR</p>
+        <p>A commentary piece warning of a foreseeable risk of AMR communication being manipulated and used to disseminate xenophobic rhetoric and detailing the role medical scientists have to play in combating misinformation and preserving public understanding.</p>
       </div>
 
-      <div class="carousel-card" data-link="/projects/osint">
-        <h3>OSINT & Health Misinformation</h3>
-        <p>Digital Health • Narrative Analysis</p>
+      <div class="carousel-card" data-link="/Projects/QSI_Review">
+        <h3>QSI use targeting Pseudomonas aeruginosa in an Intensive Care Setting</h3>
+        <p>QSI • Literature Review • Intensive Care</p>
+        <p>A review of the applications of QSI use to combat antimicrobial resistant strains of Pseudomonas aeruginosa in intensive care settings.</p>
       </div>
 
-      <div class="carousel-card" data-link="/projects/ntc">
-        <h3>NTC Variant Calling Course</h3>
-        <p>Bioinformatics • Teaching • Pipelines</p>
+      <div class="carousel-card" data-link="/Projects/Bioinformatics_CC">
+        <h3>Bioinformatics Crash Course</h3>
+        <p>Bioinformatics • Data Science • Python</p>
+        <p>A little project refreshing my knowledge of Python and gaining experience using it in a bioinformatics setting - aided by the use of CoPilot LLM.</p>
       </div>
 
     </div>
