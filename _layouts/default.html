@@ -90,19 +90,25 @@
   </main>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Fade in when page loads
+      // Fade in on load
       document.body.classList.add("fade-in");
 
-      // Intercept clicks on elements with data-link
+      // Only navigate when clicking the ACTIVE card
       document.querySelectorAll("[data-link]").forEach(el => {
         el.addEventListener("click", e => {
+          const isActive = el.classList.contains("active");
+
+          if (!isActive) {
+            // Let carousel JS handle moving the card to centre
+            return;
+          }
+
+          // If active, intercept and fade out
           e.preventDefault();
           const url = el.dataset.link;
 
-          // Fade out
           document.body.classList.add("fade-out");
 
-          // Navigate after fade
           setTimeout(() => {
             window.location = url;
           }, 400);
@@ -110,6 +116,7 @@
       });
     });
     </script>
+
 
 
 </body>
