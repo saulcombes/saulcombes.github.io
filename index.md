@@ -6,7 +6,7 @@ layout: default
   width: 100%;
   overflow: hidden;
   margin: 3rem auto;
-  padding: 2rem 0; /* ensures rounded corners visible */
+  padding: 3rem 0; /* ensures rounded corners are visible */
   position: relative;
 }
 
@@ -16,10 +16,10 @@ layout: default
   content: "";
   position: absolute;
   top: 0;
-  width: 120px;
+  width: 180px; /* wider fade for smoother look */
   height: 100%;
   pointer-events: none;
-  z-index: 5;
+  z-index: 10;
 }
 
 .carousel-container::before {
@@ -106,9 +106,17 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 <script>
 const track = document.querySelector('.carousel-track');
 const cards = Array.from(document.querySelectorAll('.carousel-card'));
-const cardWidth = cards[0].offsetWidth + 32; // width + gap
 
 let currentIndex = 0;
+let cardWidth;
+
+function recalc() {
+  cardWidth = cards[0].offsetWidth + 32; // width + gap
+  updateCarousel();
+}
+
+window.addEventListener('resize', recalc);
+setTimeout(recalc, 50); // allow layout to settle
 
 function updateCarousel() {
   track.style.transform = `translateX(calc(50% - ${(currentIndex + 0.5) * cardWidth}px))`;
@@ -119,7 +127,8 @@ function updateCarousel() {
 }
 
 function moveTo(index) {
-  currentIndex = Math.max(0, Math.min(cards.length - 1, index));
+  const maxIndex = cards.length - 1;
+  currentIndex = Math.max(0, Math.min(index, maxIndex));
   updateCarousel();
 }
 
@@ -147,9 +156,7 @@ track.addEventListener('touchend', e => {
   if (diff > 50) moveTo(currentIndex - 1);
   if (diff < -50) moveTo(currentIndex + 1);
 });
-
-// Initial position
-updateCarousel();
 </script>
+
 
 
