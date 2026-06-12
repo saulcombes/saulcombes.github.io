@@ -172,7 +172,7 @@ function moveTo(index) {
 // Click to centre
 const pageFade = document.querySelector('.page-fade');
 
-allcards.forEach((card, index) => {
+cards.forEach((card, index) => {
   card.addEventListener('click', e => {
 
     // If not active → just move carousel
