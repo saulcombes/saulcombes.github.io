@@ -137,7 +137,6 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     </div>
   </div>
 </div>
-<div class="page-fade"></div>
 
 
 <script>
