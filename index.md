@@ -75,6 +75,22 @@ layout: default
   justify-content: center;
   align-items: center;
 }
+
+.page-fade {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 999;
+}
+
+.page-fade.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 </style>
 
 # Saul Combes  
@@ -121,6 +137,8 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     </div>
   </div>
 </div>
+<div class="page-fade"></div>
+
 
 <script>
 const track = document.querySelector('.carousel-track');
@@ -152,15 +170,29 @@ function moveTo(index) {
 }
 
 // Click to centre
-cards.forEach((card, index) => {
-  card.addEventListener('click', () => {
-    if (index === currentIndex) {
-      window.location = card.dataset.link;
-    } else {
+const pageFade = document.querySelector('.page-fade');
+
+allcards.forEach((card, index) => {
+  card.addEventListener('click', e => {
+
+    // If not active → just move carousel
+    if (index !== currentIndex) {
       moveTo(index);
+      return;
     }
+
+    // Active card → fade + navigate
+    e.preventDefault();
+    const url = card.dataset.link;
+
+    pageFade.classList.add('active');
+
+    setTimeout(() => {
+      window.location = url;
+    }, 350);
   });
 });
+
 
 // Swipe support
 let startX = 0;
