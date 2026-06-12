@@ -89,33 +89,50 @@
     {{ content }}
   </main>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Fade in on load
-      document.body.classList.add("fade-in");
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("fade-in");
 
-      // Only navigate when clicking the ACTIVE card
-      document.querySelectorAll("[data-link]").forEach(el => {
-        el.addEventListener("click", e => {
-          const isActive = el.classList.contains("active");
+  let isDragging = false;
+  let dragStartX = 0;
 
-          if (!isActive) {
-            // Let carousel JS handle moving the card to centre
-            return;
-          }
+  // Detect drag vs click
+  document.addEventListener("mousedown", e => {
+    dragStartX = e.clientX;
+    isDragging = false;
+  });
 
-          // If active, intercept and fade out
-          e.preventDefault();
-          const url = el.dataset.link;
+  document.addEventListener("mousemove", e => {
+    if (Math.abs(e.clientX - dragStartX) > 10) {
+      isDragging = true;
+    }
+  });
 
-          document.body.classList.add("fade-out");
+  document.querySelectorAll("[data-link]").forEach(el => {
+    el.addEventListener("click", e => {
+      const isActive = el.classList.contains("active");
 
-          setTimeout(() => {
-            window.location = url;
-          }, 400);
-        });
-      });
+      // If not active → carousel should handle it
+      if (!isActive) return;
+
+      // If dragging → do NOT navigate
+      if (isDragging) {
+        e.preventDefault();
+        return;
+      }
+
+      // Real click on active card → fade + navigate
+      e.preventDefault();
+      const url = el.dataset.link;
+
+      document.body.classList.add("fade-out");
+
+      setTimeout(() => {
+        window.location = url;
+      }, 400);
     });
-    </script>
+  });
+});
+</script>
 
 
 
