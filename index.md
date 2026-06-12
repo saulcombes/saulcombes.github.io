@@ -67,8 +67,7 @@ layout: default
 }
 
 .carousel-card.active:hover {
-  transform: scale(1.20) translateY(-8px) rotateX(4deg) rotateY(4deg);
-  box-shadow: 0 25px 55px rgba(0,0,0,0.25);
+  transform: scale(1.10) translateY(-8px) rotateX(4deg) rotateY(4deg);
 }
 
 .carousel-wrapper {
