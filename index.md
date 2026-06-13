@@ -20,27 +20,57 @@ layout: default
 .petri-nav {
   width: min(480px, 80vw);
   height: min(480px, 80vw);
-  border: 4px solid rgba(120,160,220,0.35);
-  border-radius: 50%;
   position: relative;
-  backdrop-filter: blur(2px);
 }
 
-/* Colonies */
+/* Petri dish base image */
+.petri-dish {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Colony wrapper (clickable) */
 .petri-colony {
   position: absolute;
-  width: 38px;
-  height: 38px;
-  background: #4a7bd1;
-  border-radius: 50%;
+  width: 70px;   /* colony size */
+  height: 70px;
   cursor: pointer;
   transition: 0.25s ease;
-  box-shadow: 0 0 0 rgba(140,180,255,0.4);
+  z-index: 2;
 }
 
-.petri-colony:hover {
-  transform: scale(1.22);
-  box-shadow: 0 0 16px rgba(140,180,255,0.7);
+/* Colony image */
+.colony-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: 0.25s ease;
+  filter: brightness(1.1) saturate(1.2);
+  position: relative;
+}
+
+/* Blue overlay tint */
+.colony-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(74, 123, 209, 0.25);
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Hover glow */
+.petri-colony:hover .colony-img {
+  transform: scale(1.15);
+  filter: brightness(1.3) saturate(1.4);
 }
 
 /* Labels */
@@ -48,7 +78,7 @@ layout: default
   content: attr(data-label);
   position: absolute;
   left: 50%;
-  top: -18px;
+  top: -22px;
   transform: translateX(-50%);
   background: white;
   padding: 4px 8px;
@@ -81,13 +111,31 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 <!-- PETRI DISH NAVIGATION SECTION -->
 <div class="petri-section">
   <div class="petri-nav">
-    <a href="/" class="petri-colony colony-home" data-label="Home"></a>
-    <a href="/Projects/Projects" class="petri-colony colony-projects" data-label="Projects"></a>
-    <a href="/Research_Areas" class="petri-colony colony-research" data-label="Research Areas"></a>
-    <a href="/Skills" class="petri-colony colony-skills" data-label="Skills"></a>
+
+    <!-- Petri Dish Base -->
+    <img src="/assets/img/Petri Dish.png" alt="Petri Dish" class="petri-dish">
+
+    <!-- Colonies -->
+    <a href="/" class="petri-colony colony-home" data-label="Home">
+      <img src="/assets/img/Colony 1.png" alt="Home Colony" class="colony-img">
+    </a>
+
+    <a href="/Projects/Projects" class="petri-colony colony-projects" data-label="Projects">
+      <img src="/assets/img/Colony 2.png" alt="Projects Colony" class="colony-img">
+    </a>
+
+    <a href="/Research_Areas" class="petri-colony colony-research" data-label="Research Areas">
+      <img src="/assets/img/Colony 3.png" alt="Research Colony" class="colony-img">
+    </a>
+
+    <a href="/Skills" class="petri-colony colony-skills" data-label="Skills">
+      <img src="/assets/img/Colony 4.png" alt="Skills Colony" class="colony-img">
+    </a>
+
   </div>
 </div>
 </div>
+
 ---
 
 ## Active Projects
