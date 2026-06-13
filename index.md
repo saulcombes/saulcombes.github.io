@@ -14,7 +14,7 @@ layout: default
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 3rem 0 4rem 0;
+  margin: 3rem 0 3.5rem 0;
 }
 
 .petri-nav {
@@ -76,12 +76,12 @@ layout: default
 
 <div class="main-content">
 
-<h2>Saul Combes</h2>
-<h3>Cellular and Molecular Medicine MSc </h3>
+# Saul Combes  
+### Cellular and Molecular Medicine MSc
 
 I integrate Mechanistic Biology, Clinical Data, and Computational Methods to understand infection and injury.
 
-</div>
+---
 
 <!-- PETRI DISH NAVIGATION SECTION -->
 <div class="petri-section">
@@ -92,6 +92,11 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     <a href="/Skills" class="petri-colony colony-skills" data-label="Skills"></a>
   </div>
 </div>
+
+---
+
+<h2>Active Projects</h2>
+
 
 ---
 
