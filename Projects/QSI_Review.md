@@ -28,6 +28,8 @@ The project examined:
 ### **1. Mechanistic mapping of QS networks**
 The review broke down the hierarchical Las → PQS → Rhl cascade, explaining how each system regulates elastase, pyocyanin, rhamnolipids, and biofilm maturation. Noting that *“the Las system is considered to be the premier QS mechanism due to its ability to take priority over all other QS mechanisms.”*
 
+![Figure 1](/assets/img/Figure1.png)
+
 ### **2. Linking virulence to ICU pathology**
 I connected QS‑regulated factors to real ICU disease processes:
 
