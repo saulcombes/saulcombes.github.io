@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="loader">
-  <img src="/favicon.ico" alt="loading icon" class="loader-icon">
+  <img src="/assets/img/bacteria.png" alt="loading icon" class="loader-icon">
 </div>
 
 <style>
