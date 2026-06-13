@@ -76,8 +76,8 @@ layout: default
 
 <div class="main-content">
 
-# Saul Combes  
-### Cellular and Molecular Medicine MSc
+<h2>Saul Combes</h2>
+<h3>Cellular and Molecular Medicine MSc </h3>
 
 I integrate Mechanistic Biology, Clinical Data, and Computational Methods to understand infection and injury.
 
