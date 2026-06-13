@@ -97,7 +97,7 @@ layout: default
   width: 60px;
   height: 60px;
   opacity: 0.85;
-  animation: gentleSpin 5s ease-in-out infinite;
+  animation: gentleSpin 2.4s ease-in-out infinite;
 }
 
 @keyframes gentleSpin {
@@ -162,7 +162,9 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 
 <script>
 window.addEventListener("load", () => {
-  document.getElementById("loader").classList.add("fade-out");
+  setTimeout(() => {
+    document.getElementById("loader").classList.add("fade-out");
+  }, 2000);
 });
 
 const track = document.querySelector('.carousel-track');
