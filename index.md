@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<div id="loader">
+  <img src="/assets/img/favicon.png" alt="loading icon" class="loader-icon">
+</div>
 
 <style>
 .carousel-container {
@@ -76,6 +79,40 @@ layout: default
   justify-content: center;
   align-items: center;
 }
+
+/* Fullscreen loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease;
+}
+
+/* Elegant spin → pause → spin → pause */
+.loader-icon {
+  width: 60px;
+  height: 60px;
+  opacity: 0.85;
+  animation: gentleSpin 2.4s ease-in-out infinite;
+}
+
+@keyframes gentleSpin {
+  0%   { transform: rotate(0deg); }
+  40%  { transform: rotate(360deg); }  /* smooth spin */
+  60%  { transform: rotate(360deg); }  /* pause */
+  100% { transform: rotate(0deg); }    /* glide back */
+}
+
+/* Fade-out when page is ready */
+#loader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
 </style>
 
 # Saul Combes  
@@ -124,6 +161,10 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 </div>
 
 <script>
+window.addEventListener("load", () => {
+  document.getElementById("loader").classList.add("fade-out");
+});
+
 const track = document.querySelector('.carousel-track');
 const cards = Array.from(document.querySelectorAll('.carousel-card'));
 
