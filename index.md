@@ -16,7 +16,7 @@ layout: default
   margin: 4rem 0 5rem 0;
 }
 
-/* Larger, responsive dish */
+/* Responsive Petri dish container */
 .petri-nav {
   width: min(480px, 80vw);
   height: min(480px, 80vw);
@@ -30,19 +30,21 @@ layout: default
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 1;
 }
 
 /* Colony wrapper (clickable) */
 .petri-colony {
   position: absolute;
-  width: 70px;   /* colony size */
-  height: 70px;
+  width: 90px;   /* colony size */
+  height: 90px;
   cursor: pointer;
   transition: 0.25s ease;
-  z-index: 2;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Colony image */
@@ -51,26 +53,38 @@ layout: default
   height: 100%;
   object-fit: contain;
   border-radius: 50%;
-  transition: 0.25s ease;
-  filter: brightness(1.1) saturate(1.2);
   position: relative;
+  z-index: 3;
+  filter: brightness(1.1) saturate(1.3);
+  transition: 0.25s ease;
 }
 
-/* Blue overlay tint */
-.colony-img::after {
+/* STRONG stylised blue overlay */
+.colony-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.colony-wrap::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(74, 123, 209, 0.25);
-  mix-blend-mode: multiply;
   border-radius: 50%;
+  background: rgba(74, 123, 209, 0.55); /* strong tint */
+  mix-blend-mode: color;
+  z-index: 4;
   pointer-events: none;
 }
 
-/* Hover glow */
+/* Glow effect */
 .petri-colony:hover .colony-img {
-  transform: scale(1.15);
-  filter: brightness(1.3) saturate(1.4);
+  transform: scale(1.18);
+  filter: brightness(1.4) saturate(1.6);
+}
+
+.petri-colony:hover .colony-wrap::after {
+  box-shadow: 0 0 22px rgba(74,123,209,0.9);
 }
 
 /* Labels */
@@ -78,7 +92,7 @@ layout: default
   content: attr(data-label);
   position: absolute;
   left: 50%;
-  top: -22px;
+  top: -26px;
   transform: translateX(-50%);
   background: white;
   padding: 4px 8px;
@@ -88,17 +102,18 @@ layout: default
   pointer-events: none;
   transition: 0.25s ease;
   border: 1px solid rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
 .petri-colony:hover::after {
   opacity: 1;
 }
 
-/* Colony positions */
-.colony-home      { top: 6%;  left: 50%; transform: translateX(-50%); }
-.colony-projects  { top: 50%; left: 94%; transform: translateY(-50%); }
-.colony-research  { top: 94%; left: 50%; transform: translateX(-50%); }
-.colony-skills    { top: 50%; left: 6%;  transform: translateY(-50%); }
+/* Colony positions (moved inward) */
+.colony-home      { top: 18%; left: 50%; transform: translateX(-50%); }
+.colony-projects  { top: 50%; left: 82%; transform: translateY(-50%); }
+.colony-research  { top: 82%; left: 50%; transform: translateX(-50%); }
+.colony-skills    { top: 50%; left: 18%; transform: translateY(-50%); }
 </style>
 
 # Saul Combes  
@@ -117,19 +132,27 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 
     <!-- Colonies -->
     <a href="/" class="petri-colony colony-home" data-label="Home">
-      <img src="/assets/img/Colony 1.png" alt="Home Colony" class="colony-img">
+      <div class="colony-wrap">
+        <img src="/assets/img/Colony 1.png" alt="Home Colony" class="colony-img">
+      </div>
     </a>
 
     <a href="/Projects/Projects" class="petri-colony colony-projects" data-label="Projects">
-      <img src="/assets/img/Colony 2.png" alt="Projects Colony" class="colony-img">
+      <div class="colony-wrap">
+        <img src="/assets/img/Colony 2.png" alt="Projects Colony" class="colony-img">
+      </div>
     </a>
 
     <a href="/Research_Areas" class="petri-colony colony-research" data-label="Research Areas">
-      <img src="/assets/img/Colony 3.png" alt="Research Colony" class="colony-img">
+      <div class="colony-wrap">
+        <img src="/assets/img/Colony 3.png" alt="Research Colony" class="colony-img">
+      </div>
     </a>
 
     <a href="/Skills" class="petri-colony colony-skills" data-label="Skills">
-      <img src="/assets/img/Colony 4.png" alt="Skills Colony" class="colony-img">
+      <div class="colony-wrap">
+        <img src="/assets/img/Colony 4.png" alt="Skills Colony" class="colony-img">
+      </div>
     </a>
 
   </div>
