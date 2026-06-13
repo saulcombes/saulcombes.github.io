@@ -2,6 +2,7 @@
 title: QSI Review
 ---
 [<-- Home](/)
+[Projects -->](/Projects/Projects)
 
 # Quorum‑Sensing Inhibitors Targeting *Pseudomonas aeruginosa* in Intensive Care
 
