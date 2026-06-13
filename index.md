@@ -8,29 +8,29 @@ layout: default
 
 <!-- FULL-WIDTH PETRI DISH NAVIGATION -->
 <style>
-/* --- PETRI DISH NAVIGATION (FULL WIDTH) --- */
-
+/* Full-width centred section */
 .petri-section {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 3rem 0 3.5rem 0;
+  margin: 4rem 0 5rem 0; /* clean breathing room */
 }
 
+/* Larger, responsive dish */
 .petri-nav {
-  width: 380px;
-  height: 380px;
+  width: min(480px, 80vw);
+  height: min(480px, 80vw);
   border: 4px solid rgba(120,160,220,0.35);
   border-radius: 50%;
   position: relative;
   backdrop-filter: blur(2px);
 }
 
-/* Colony nodes */
+/* Colonies */
 .petri-colony {
   position: absolute;
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   background: #4a7bd1;
   border-radius: 50%;
   cursor: pointer;
@@ -38,27 +38,25 @@ layout: default
   box-shadow: 0 0 0 rgba(140,180,255,0.4);
 }
 
-/* Hover effect */
 .petri-colony:hover {
   transform: scale(1.22);
   box-shadow: 0 0 16px rgba(140,180,255,0.7);
 }
 
-/* Colony labels */
+/* Labels */
 .petri-colony::after {
   content: attr(data-label);
   position: absolute;
-  left: 45px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  top: -18px;
+  transform: translateX(-50%);
   background: white;
-  padding: 6px 10px;
+  padding: 4px 8px;
   border-radius: 6px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   opacity: 0;
   pointer-events: none;
   transition: 0.25s ease;
-  white-space: nowrap;
   border: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -66,11 +64,11 @@ layout: default
   opacity: 1;
 }
 
-/* --- COLONY POSITIONS (balanced around dish) --- */
-.colony-home      { top: 10%; left: 50%; transform: translateX(-50%); }
-.colony-projects  { top: 50%; left: 90%; transform: translateY(-50%); }
-.colony-research  { top: 85%; left: 50%; transform: translateX(-50%); }
-.colony-skills    { top: 50%; left: 10%; transform: translateY(-50%); }
+/* Colony positions (balanced around circle) */
+.colony-home      { top: 6%;  left: 50%; transform: translateX(-50%); }
+.colony-projects  { top: 50%; left: 94%; transform: translateY(-50%); }
+.colony-research  { top: 94%; left: 50%; transform: translateX(-50%); }
+.colony-skills    { top: 50%; left: 6%;  transform: translateY(-50%); }
 
 </style>
 
@@ -92,6 +90,7 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     <a href="/Skills" class="petri-colony colony-skills" data-label="Skills"></a>
   </div>
 </div>
+
 
 ---
 
