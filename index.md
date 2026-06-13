@@ -59,23 +59,6 @@ layout: default
   transition: 0.25s ease;
 }
 
-/* STRONG stylised blue overlay */
-.colony-wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.colony-wrap::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: rgba(74, 123, 209, 0.55); /* strong tint */
-  mix-blend-mode: color;
-  z-index: 4;
-  pointer-events: none;
-}
 
 /* Glow effect */
 .petri-colony:hover .colony-img {
