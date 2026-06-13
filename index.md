@@ -87,7 +87,7 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     <a href="/Skills" class="petri-colony colony-skills" data-label="Skills"></a>
   </div>
 </div>
-
+</div>
 ---
 
 ## Active Projects
