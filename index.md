@@ -104,7 +104,7 @@ layout: default
   0%   { transform: rotate(0deg); }
   40%  { transform: rotate(360deg); }  /* smooth spin */
   60%  { transform: rotate(360deg); }  /* pause */
-  100% { transform: rotate(0deg); }    /* glide back */
+  100% { transform: rotate(360deg); }    /* glide back */
 }
 
 /* Fade-out when page is ready */
