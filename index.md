@@ -235,8 +235,6 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
   </div>
 </div>
 
-</div> <!-- end main-content -->
-
 <script>
 window.addEventListener("load", () => {
   setTimeout(() => {
