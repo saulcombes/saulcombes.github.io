@@ -102,7 +102,11 @@ layout: default
 # Saul Combes  
 ### Cellular and Molecular Medicine MSc
 
-I am a second year Cellular and Molecular Medicine Student at the University of Bristol. I having a growing interest in the intersection of Microbiology and Intensive Care, I integrate Mechanistic Biology, Clinical Data, Computational Methods and rigorous Scientific Practice to understand infection, injury and the potential applications of Microbiology in Intensive Care. Please use this site to browse the various extracurricular research projects I am involved with. 
+I am a second year Cellular and Molecular Medicine Student at the University of Bristol. I having a growing interest in the intersection of Microbiology and Intensive Care. 
+
+I integrate Mechanistic Biology, Clinical Data, Computational Methods and rigorous Scientific Practice to understand infection, injury and the potential applications of Microbiology in Intensive Care. 
+
+Please use this site to browse the various extracurricular research projects I am involved with. 
 
 <div class="main-content">
 
