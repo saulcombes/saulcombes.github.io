@@ -164,7 +164,7 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("loader").classList.add("fade-out");
-  }, 10000);
+  }, 5000);
 });
 
 const track = document.querySelector('.carousel-track');
