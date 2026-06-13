@@ -94,8 +94,8 @@ layout: default
 
 /* Colony positions (moved inward) */
 .colony-home      { top: 18%; left: 50%; transform: translateX(-50%); }
-.colony-projects  { top: 50%; left: 82%; transform: translateY(-50%); }
-.colony-research  { top: 82%; left: 50%; transform: translateX(-50%); }
+.colony-projects  { top: 50%; left: 72%; transform: translateY(-50%); }
+.colony-research  { top: 68%; left: 50%; transform: translateX(-50%); }
 .colony-skills    { top: 50%; left: 18%; transform: translateY(-50%); }
 </style>
 
