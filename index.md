@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="loader">
-  <img src="/assets/img/favicon.ico" alt="loading icon" class="loader-icon">
+  <img src="/favicon.ico" alt="loading icon" class="loader-icon">
 </div>
 
 <style>
