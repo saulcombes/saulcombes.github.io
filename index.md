@@ -97,7 +97,7 @@ layout: default
   width: 60px;
   height: 60px;
   opacity: 0.85;
-  animation: gentleSpin 2.4s ease-in-out infinite;
+  animation: gentleSpin 5s ease-in-out infinite;
 }
 
 @keyframes gentleSpin {
