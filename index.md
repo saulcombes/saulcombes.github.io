@@ -6,29 +6,32 @@ layout: default
   <img src="/assets/img/bacteria.png" alt="loading icon" class="loader-icon">
 </div>
 
-<!-- PETRI DISH NAVIGATION -->
+<!-- FULL-WIDTH PETRI DISH NAVIGATION -->
 <style>
-/* --- PETRI DISH NAVIGATION --- */
+/* --- PETRI DISH NAVIGATION (FULL WIDTH) --- */
+
+.petri-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 4rem 0;
+}
 
 .petri-nav {
-  position: fixed;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 220px;
-  height: 220px;
-  border: 3px solid rgba(120,160,220,0.35); /* soft blue ring */
+  width: 380px;
+  height: 380px;
+  border: 4px solid rgba(120,160,220,0.35);
   border-radius: 50%;
+  position: relative;
   backdrop-filter: blur(2px);
-  z-index: 50;
 }
 
 /* Colony nodes */
 .petri-colony {
   position: absolute;
-  width: 26px;
-  height: 26px;
-  background: #4a7bd1; /* primary blue */
+  width: 34px;
+  height: 34px;
+  background: #4a7bd1;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.25s ease;
@@ -37,21 +40,21 @@ layout: default
 
 /* Hover effect */
 .petri-colony:hover {
-  transform: scale(1.18);
-  box-shadow: 0 0 12px rgba(140,180,255,0.7);
+  transform: scale(1.22);
+  box-shadow: 0 0 16px rgba(140,180,255,0.7);
 }
 
 /* Colony labels */
 .petri-colony::after {
   content: attr(data-label);
   position: absolute;
-  left: 35px;
+  left: 45px;
   top: 50%;
   transform: translateY(-50%);
   background: white;
-  padding: 4px 8px;
+  padding: 6px 10px;
   border-radius: 6px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   opacity: 0;
   pointer-events: none;
   transition: 0.25s ease;
@@ -63,26 +66,39 @@ layout: default
   opacity: 1;
 }
 
-/* --- COLONY POSITIONS (4 nodes) --- */
-.colony-home      { top: 20%; left: 50%; transform: translateX(-50%); }
-.colony-projects  { top: 50%; left: 80%; transform: translateY(-50%); }
-.colony-research  { top: 75%; left: 50%; transform: translateX(-50%); }
-.colony-skills    { top: 50%; left: 20%; transform: translateY(-50%); }
+/* --- COLONY POSITIONS (balanced around dish) --- */
+.colony-home      { top: 10%; left: 50%; transform: translateX(-50%); }
+.colony-projects  { top: 50%; left: 90%; transform: translateY(-50%); }
+.colony-research  { top: 85%; left: 50%; transform: translateX(-50%); }
+.colony-skills    { top: 50%; left: 10%; transform: translateY(-50%); }
 
-/* --- SHIFT MAIN CONTENT LEFT TO BALANCE LAYOUT --- */
-.main-content {
-  margin-right: 260px; /* space for the dish */
-}
 </style>
 
-<div class="petri-nav">
-  <a href="/" class="petri-colony colony-home" data-label="Home"></a>
-  <a href="/Projects/Projects" class="petri-colony colony-projects" data-label="Projects"></a>
-  <a href="/Research_Areas" class="petri-colony colony-research" data-label="Research Areas"></a>
-  <a href="/Skills" class="petri-colony colony-skills" data-label="Skills"></a>
+<div class="main-content">
+
+# Saul Combes  
+### Cellular and Molecular Medicine MSc
+
+I integrate Mechanistic Biology, Clinical Data, and Computational Methods to understand infection and injury.
+
 </div>
 
+<!-- PETRI DISH NAVIGATION SECTION -->
+<div class="petri-section">
+  <div class="petri-nav">
+    <a href="/" class="petri-colony colony-home" data-label="Home"></a>
+    <a href="/Projects/Projects" class="petri-colony colony-projects" data-label="Projects"></a>
+    <a href="/Research_Areas" class="petri-colony colony-research" data-label="Research Areas"></a>
+    <a href="/Skills" class="petri-colony colony-skills" data-label="Skills"></a>
+  </div>
+</div>
+
+---
+
+<h2>Active Projects</h2>
+
 <style>
+/* (your existing carousel CSS unchanged) */
 .carousel-container {
   width: 100%;
   overflow: hidden;
@@ -91,7 +107,6 @@ layout: default
   position: relative;
 }
 
-/* Fade-out edges */
 .carousel-container::before,
 .carousel-container::after {
   content: "";
@@ -157,7 +172,7 @@ layout: default
   align-items: center;
 }
 
-/* Fullscreen loader */
+/* Loader */
 #loader {
   position: fixed;
   inset: 0;
@@ -169,7 +184,6 @@ layout: default
   transition: opacity 0.4s ease;
 }
 
-/* Elegant spin → pause → spin → pause */
 .loader-icon {
   width: 60px;
   height: 60px;
@@ -184,23 +198,11 @@ layout: default
   100% { transform: rotate(360deg); }
 }
 
-/* Fade-out when page is ready */
 #loader.fade-out {
   opacity: 0;
   pointer-events: none;
 }
 </style>
-
-<div class="main-content">
-
-# Saul Combes  
-### Cellular and Molecular Medicine MSc
-
-I integrate Mechanistic Biology, Clinical Data, and Computational Methods to understand infection and injury.
-
----
-
-<h2>Active Projects</h2>
 
 <div class="carousel-container">
   <div class="carousel-wrapper">
@@ -237,8 +239,6 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     </div>
   </div>
 </div>
-
-</div> <!-- end main-content -->
 
 <script>
 window.addEventListener("load", () => {
