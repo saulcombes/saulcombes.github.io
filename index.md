@@ -13,7 +13,7 @@ layout: default
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 4rem 0 5rem 0; /* clean breathing room */
+  margin: 4rem 0 5rem 0;
 }
 
 /* Larger, responsive dish */
@@ -64,22 +64,19 @@ layout: default
   opacity: 1;
 }
 
-/* Colony positions (balanced around circle) */
+/* Colony positions */
 .colony-home      { top: 6%;  left: 50%; transform: translateX(-50%); }
 .colony-projects  { top: 50%; left: 94%; transform: translateY(-50%); }
 .colony-research  { top: 94%; left: 50%; transform: translateX(-50%); }
 .colony-skills    { top: 50%; left: 6%;  transform: translateY(-50%); }
-
 </style>
-
-<div class="main-content">
 
 # Saul Combes  
 ### Cellular and Molecular Medicine MSc
 
 I integrate Mechanistic Biology, Clinical Data, and Computational Methods to understand infection and injury.
 
----
+<div class="main-content">
 
 <!-- PETRI DISH NAVIGATION SECTION -->
 <div class="petri-section">
@@ -91,15 +88,9 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
   </div>
 </div>
 
-
 ---
 
-<h2>Active Projects</h2>
-
-
----
-
-<h2>Active Projects</h2>
+## Active Projects
 
 <style>
 /* (your existing carousel CSS unchanged) */
@@ -243,6 +234,8 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     </div>
   </div>
 </div>
+
+</div> <!-- end main-content -->
 
 <script>
 window.addEventListener("load", () => {
