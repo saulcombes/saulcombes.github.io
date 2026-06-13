@@ -1,8 +1,85 @@
 ---
 layout: default
 ---
+
 <div id="loader">
   <img src="/assets/img/bacteria.png" alt="loading icon" class="loader-icon">
+</div>
+
+<!-- PETRI DISH NAVIGATION -->
+<style>
+/* --- PETRI DISH NAVIGATION --- */
+
+.petri-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
+  height: 220px;
+  border: 3px solid rgba(120,160,220,0.35); /* soft blue ring */
+  border-radius: 50%;
+  backdrop-filter: blur(2px);
+  z-index: 50;
+}
+
+/* Colony nodes */
+.petri-colony {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: #4a7bd1; /* primary blue */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 0 0 rgba(140,180,255,0.4);
+}
+
+/* Hover effect */
+.petri-colony:hover {
+  transform: scale(1.18);
+  box-shadow: 0 0 12px rgba(140,180,255,0.7);
+}
+
+/* Colony labels */
+.petri-colony::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+  white-space: nowrap;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.petri-colony:hover::after {
+  opacity: 1;
+}
+
+/* --- COLONY POSITIONS (4 nodes) --- */
+.colony-home      { top: 20%; left: 50%; transform: translateX(-50%); }
+.colony-projects  { top: 50%; left: 80%; transform: translateY(-50%); }
+.colony-research  { top: 75%; left: 50%; transform: translateX(-50%); }
+.colony-skills    { top: 50%; left: 20%; transform: translateY(-50%); }
+
+/* --- SHIFT MAIN CONTENT LEFT TO BALANCE LAYOUT --- */
+.main-content {
+  margin-right: 260px; /* space for the dish */
+}
+</style>
+
+<div class="petri-nav">
+  <a href="/" class="petri-colony colony-home" data-label="Home"></a>
+  <a href="/Projects/Projects" class="petri-colony colony-projects" data-label="Projects"></a>
+  <a href="/Research_Areas" class="petri-colony colony-research" data-label="Research Areas"></a>
+  <a href="/Skills" class="petri-colony colony-skills" data-label="Skills"></a>
 </div>
 
 <style>
@@ -102,9 +179,9 @@ layout: default
 
 @keyframes gentleSpin {
   0%   { transform: rotate(0deg); }
-  40%  { transform: rotate(360deg); }  /* smooth spin */
-  60%  { transform: rotate(360deg); }  /* pause */
-  100% { transform: rotate(360deg); }    /* glide back */
+  40%  { transform: rotate(360deg); }
+  60%  { transform: rotate(360deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* Fade-out when page is ready */
@@ -112,8 +189,9 @@ layout: default
   opacity: 0;
   pointer-events: none;
 }
-
 </style>
+
+<div class="main-content">
 
 # Saul Combes  
 ### Cellular and Molecular Medicine MSc
@@ -159,6 +237,8 @@ I integrate Mechanistic Biology, Clinical Data, and Computational Methods to und
     </div>
   </div>
 </div>
+
+</div> <!-- end main-content -->
 
 <script>
 window.addEventListener("load", () => {
