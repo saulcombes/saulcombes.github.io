@@ -2,6 +2,8 @@
 layout: default
 title: Research Areas
 ---
+[<-- Home](/)
+[Projects -->](/Projects/Projects)
 
 # Research Areas
 
