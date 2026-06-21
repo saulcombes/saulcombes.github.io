@@ -5,7 +5,7 @@ title: Bioinformatics Crash Course
 [<-- Home](/)
 [Projects -->](/Projects/Projects)
 
-# Bioinformatics Crash Course (In Progress)
+# Bioinformatics Crash Course
 
 A structured, self‑directed learning journey covering the core foundations of modern bioinformatics. This project documents my progression through a comprehensive crash course — from FASTQ fundamentals to alignment, variant calling, and beyond. It includes notes, exercises, code snippets, and small deliverables that reflect my understanding at each stage.
 
