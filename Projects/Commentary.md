@@ -14,7 +14,7 @@ This project, while not part of my main medical research pipeline, was a product
 
 ## Overview
 
-The commentary begins by outlining the fragility of public understanding around AMR. As the commentary notes, *“public understanding of AMR remains fragile, shaped by social media rather than specialist channels.”* With terms like *“superbug,” “silent pandemic,”* and *“post‑antibiotic apocalypse”* dominating communication, AMR is often framed in emotionally charged, oversimplified language.
+The commentary begins by outlining the fragility of public understanding around AMR. As the commentary notes, *“public understanding of AMR remains fragile, shaped by social media rather than specialist channels.”* With terms like *“superbug", “silent pandemic",* and *“post‑antibiotic apocalypse”* dominating communication, AMR is often framed in emotionally charged, oversimplified language.
 
 This creates an environment where:
 
