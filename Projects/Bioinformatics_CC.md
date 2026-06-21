@@ -7,7 +7,7 @@ title: Bioinformatics Crash Course
 
 # Bioinformatics Crash Course
 
-A structured, self‑directed learning journey covering the core foundations of modern bioinformatics. This project documents my progression through a comprehensive crash course — from FASTQ fundamentals to alignment, variant calling, and beyond. It includes notes, exercises, code snippets, and small deliverables that reflect my understanding at each stage.
+A structured, self‑directed learning journey covering the core foundations of modern bioinformatics. This project documents my progression through a comprehensive crash course - from FASTQ fundamentals to alignment, variant calling, and beyond. It includes notes, exercises, code snippets, and small deliverables that reflect my understanding at each stage.
 
 The aim of this project is to demonstrate:
 
@@ -27,7 +27,7 @@ This course complements my standalone **FASTQ/QC/Trimming pipeline**, which repr
 
 These sessions were completed as a single integrated project, where I built a Python‑based FASTQ parsing, QC, adapter detection, and trimming pipeline.
 
-All code and notes for Sessions 1–7 are collected in:
+All code and notes for Sessions 1-7 are collected in:
 [Sessions 1 to 7 -->](https://github.com/saulcombes/Bioinformatics-Crash-Course/tree/main/sessions_1_to_7)
 
 Topics covered include:
@@ -41,7 +41,7 @@ Topics covered include:
 - Documentation of limitations and future improvements  
 
 The standalone project version is available here:  
-**https://github.com/saulcombes/FASTA-tools**
+*[FASTA-Tools](https://github.com/saulcombes/FASTA-tools)*
 
 ---
 
@@ -74,7 +74,7 @@ This crash course is designed to:
 - act as a portfolio piece for early‑career bioinformatics roles  
 - document both conceptual understanding and practical implementation  
 
-It is **not** intended to be a polished pipeline or production‑ready tool — it is a record of deliberate practice.
+It is **not** intended to be a polished pipeline or production‑ready tool - it is a record of deliberate practice.
 
 ---
 
