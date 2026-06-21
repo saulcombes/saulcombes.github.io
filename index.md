@@ -267,7 +267,7 @@ Please use this site to browse the various extracurricular research projects I a
         <p>A Genome Wide Association Study using Mendelian randomisation with infectious disease as an outcome as part of an MRC-IEU supervised project.</p>
       </div>
 
-      <div class="carousel-card" data-link="/Projects/Communication">
+      <div class="carousel-card" data-link="/Projects/Commentary">
         <h3>From superbugs to scapegoats: Could antimicrobial resistance misinformation fuel xenophobic discourse?</h3>
         <p>Public Health • Scientific Communication • AMR</p>
         <p>-----</p>
