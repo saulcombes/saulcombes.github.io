@@ -130,13 +130,13 @@ Please use this site to browse the various extracurricular research projects I a
       </div>
     </a>
 
-    <a href="/Research_Areas" class="petri-colony colony-research" data-label="Research Areas">
+    <a href="/Research_Areas/Research_Areas" class="petri-colony colony-research" data-label="Research Areas">
       <div class="colony-wrap">
         <img src="/assets/img/Colony 3.png" alt="Research Colony" class="colony-img">
       </div>
     </a>
 
-    <a href="/Skills" class="petri-colony colony-skills" data-label="Skills">
+    <a href="/Skills/Skills" class="petri-colony colony-skills" data-label="Skills">
       <div class="colony-wrap">
         <img src="/assets/img/Colony 4.png" alt="Skills Colony" class="colony-img">
       </div>
