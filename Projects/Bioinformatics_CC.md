@@ -2,6 +2,8 @@
 layout: default
 title: Bioinformatics Crash Course
 ---
+[<-- Home](/)
+[Projects -->](/Projects/Projects)
 
 # Bioinformatics Crash Course (In Progress)
 
