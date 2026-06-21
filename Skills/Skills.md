@@ -2,6 +2,8 @@
 layout: default
 title: Skills
 ---
+[<-- Home](/)
+[Projects -->](/Projects/Projects)
 
 # Skills
 
