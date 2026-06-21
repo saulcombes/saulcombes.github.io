@@ -60,12 +60,4 @@ A summary of the technical, scientific, and analytical skills I use across my re
 - responsible communication of infectious‑disease topics  
 - documentation and reflective learning  
 
----
-
-## Professional & Practical Skills
-- first aid & basic life support  
-- driving licence (UK)  
-- teamwork and leadership (Army Cadets LCpl)  
-- customer‑facing communication and de‑escalation  
-- basic DIY car electrical troubleshooting  
 
