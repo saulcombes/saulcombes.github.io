@@ -1,3 +1,5 @@
+[<-- Home](/)
+
 # Projects
 
 Welcome to my project portfolio. These projects span microbiology, intensive care research, computational biology, and automation engineering.
