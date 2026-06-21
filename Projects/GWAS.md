@@ -2,6 +2,8 @@
 layout: default
 title: Genome‑Wide Association Study (GWAS)
 ---
+[<-- Home](/)
+[Projects -->](/Projects/Projects)
 
 # Genome‑Wide Association Study (In Progress)
 
